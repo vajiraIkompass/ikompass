@@ -10,22 +10,24 @@
 
 @implementation Student
 
--(float)calculateParkingFees:(BOOL)qualifiedByDistance
+-(float)calculateParkingFeesByQualifiedDistance:(BOOL)qualifiedByDistance grade:(int)studentGrade;
 {
     float discountRate = 0;
     
     if(qualifiedByDistance)
     {
-        discountRate = 0.1;
+        if(studentGrade >= 70)
+        {
+            discountRate = 1;
+        }
+        else if(studentGrade < 70 && self.grade >= 60)
+        {
+            discountRate = 0.2;
+        }
     }
-    else
-    {
-        discountRate = 0;
-    }
+    
     
     float parkingDiscount = (float)kPARKING_COST;
-    
-    //NSLog(@"%f", parkingDiscount);
     
     self.parkingFee = parkingDiscount - (parkingDiscount*discountRate);
 
@@ -40,19 +42,17 @@
     
     if(self.isLessThan30Kms)
     {
-        discountRate += 0.1;
-        
         if(self.grade >= 70)
         {
-            discountRate += 0.1;
+            discountRate = 0.2;
         }
-        else if(self.grade >= 60)
+        else if(self.grade < 70 && self.grade >= 60)
         {
-            discountRate += 0.05;
+            discountRate = 0.15;
         }
     }
 
-    NSLog(@"discount rate %f", discountRate);
+    //NSLog(@"discount rate %f", discountRate);
     
     float parkingDiscount = (float)kPARKING_COST;
     

@@ -12,12 +12,12 @@
 @interface Student : NSObject
 
 @property NSString *firstName;
-@property NSString *lastName;
+@property NSString *familyName;
 @property int grade;
 @property BOOL isLessThan30Kms;
 @property float parkingFee;
 
--(float)calculateParkingFees:(BOOL)qualifiedByDistance;
+-(float)calculateParkingFeesByQualifiedDistance:(BOOL)qualifiedByDistance grade:(int)studentGrade;
 -(void)calculateStudentParkingFees;
 
 
