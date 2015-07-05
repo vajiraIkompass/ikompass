@@ -61,7 +61,13 @@ int main(int argc, const char * argv[]) {
         {
             [eachStudent calculateParkingFees:eachStudent.isLessThan30Kms];
             
-            
+            if(true)
+            {
+                
+            }
+            else{
+                
+            }
             
             NSLog(@"parking fee for %@ is %.2f", eachStudent.firstName, [eachStudent parkingFee]);
         }
