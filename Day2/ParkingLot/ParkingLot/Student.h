@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#define kPARKING_COST 10
 
 @interface Student : NSObject
+
+@property NSString *firstName;
+@property NSString *lastName;
+@property int grade;
+@property BOOL isLessThan30Kms;
+@property float parkingFee;
+
+-(float)calculateParkingFees:(BOOL)qualifiedByDistance;
+-(void)calculateStudentParkingFees;
+
 
 @end

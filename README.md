@@ -1,2 +1,2 @@
 # ios
-Repository to store ios projects
+Repository to store ikompass projects
