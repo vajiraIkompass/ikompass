@@ -50,10 +50,8 @@
         {
             discountRate += 0.05;
         }
-
     }
 
-    
     NSLog(@"discount rate %f", discountRate);
     
     float parkingDiscount = (float)kPARKING_COST;

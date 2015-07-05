@@ -60,22 +60,16 @@ int main(int argc, const char * argv[]) {
         for (Student *eachStudent in students)
         {
             [eachStudent calculateParkingFees:eachStudent.isLessThan30Kms];
-            
-            if(true)
-            {
-                
-            }
-            else{
-                
-            }
-            
             NSLog(@"parking fee for %@ is %.2f", eachStudent.firstName, [eachStudent parkingFee]);
         }
         
         NSLog(@"-----------------------------");
 
-        [vajira calculateStudentParkingFees];
-        NSLog(@"parking fee for %@ is %.2f", vajira.firstName, vajira.parkingFee);
+        for (Student *eachStudent in students)
+        {
+            [eachStudent calculateStudentParkingFees];
+            NSLog(@"parking fee for %@ is %.2f", eachStudent.firstName, eachStudent.parkingFee);
+        }
         
     }
 
