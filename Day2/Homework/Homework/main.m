@@ -216,13 +216,13 @@ int main(int argc, const char * argv[]) {
         scienceStudent5.numberOfExperimentsDone = 3;
         
         //Q9: Calculating the sum of numbers
-        int starVale=1, endValue=100, sumOfValues=0;
+        int startValue=1, endValue=100, sumOfValues=0;
 
-        for(int i=starVale; i<=endValue; i++) {
+        for(int i=startValue; i<=endValue; i++) {
             sumOfValues += i;
         }
         
-        NSLog(@"Sum of numbers from %d to %d is: %d", starVale, endValue, sumOfValues);
+        NSLog(@"Sum of numbers from %d to %d is: %d", startValue, endValue, sumOfValues);
         
     }
     return 0;
