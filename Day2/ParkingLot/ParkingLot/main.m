@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Student.h"
 
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+
     
         Student *john = [[Student alloc] init];
         //[john calculateParkingFees:TRUE grade:75];
@@ -23,7 +24,7 @@ int main(int argc, const char * argv[]) {
         
         Student *roger = [[Student alloc] init];
         //[roger calculateParkingFees:FALSE];
-        roger.firstName = @"John";
+        roger.firstName = @"Roger";
         roger.familyName = @"Tan";
         roger.grade = 75;
         roger.isLessThan30Kms=FALSE;
@@ -53,25 +54,26 @@ int main(int argc, const char * argv[]) {
         roshan.isLessThan30Kms=NO;
         //NSLog(@"parking fee for %@ is %.2f", roshan.firstName, [roshan parkingFee]);
         
-        NSLog(@"-----------------------------");
         
+        //Creating a student array
         NSArray *students = @[john, roger, vajira, yanBin, roshan];
-            
-        for (Student *eachStudent in students)
-        {
+        
+        
+        //Calculate parking fees for each studet based on their home-distance and grade
+        for (Student *eachStudent in students) {
             [eachStudent calculateParkingFeesByQualifiedDistance:eachStudent.isLessThan30Kms grade:eachStudent.grade];
             NSLog(@"parking fee for %@ is %.2f", eachStudent.firstName, [eachStudent parkingFee]);
         }
         
-        NSLog(@"-----------------------------");
 
-        for (Student *eachStudent in students)
-        {
+        //Calculate parking fees for each studet based on their home-distance and grade, using 'self'
+        for (Student *eachStudent in students) {
             [eachStudent calculateStudentParkingFees];
             NSLog(@"parking fee for %@ is %.2f", eachStudent.firstName, eachStudent.parkingFee);
         }
-        
     }
 
     return 0;
 }
+
+

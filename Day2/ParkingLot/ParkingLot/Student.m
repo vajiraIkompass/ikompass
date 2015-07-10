@@ -44,15 +44,15 @@
     {
         if(self.grade >= 70)
         {
-            discountRate = 0.2;
+            discountRate = 1;
         }
         else if(self.grade < 70 && self.grade >= 60)
         {
-            discountRate = 0.15;
+            discountRate = 0.2;
         }
     }
 
-    //NSLog(@"discount rate %f", discountRate);
+    //NSLog(@"discount rate is: %f", discountRate);
     
     float parkingDiscount = (float)kPARKING_COST;
     
