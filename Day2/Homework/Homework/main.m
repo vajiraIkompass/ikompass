@@ -132,7 +132,7 @@ int main(int argc, const char * argv[]) {
         
         if ( roundAverageGradeWithoutBonus >= 70) {
             classClassification = @"Excellent";
-            
+
         } else if ( roundAverageGradeWithoutBonus < 70 && roundAverageGradeWithoutBonus >= 60) {
             classClassification = @"Good";
             

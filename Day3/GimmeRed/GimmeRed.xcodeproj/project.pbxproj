@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF68C2CF1B50B38900E34985 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C2CE1B50B38900E34985 /* main.m */; };
+		EF68C2D21B50B38900E34985 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C2D11B50B38900E34985 /* AppDelegate.m */; };
+		EF68C2D51B50B38900E34985 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C2D41B50B38900E34985 /* ViewController.m */; };
+		EF68C2D81B50B38900E34985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF68C2D61B50B38900E34985 /* Main.storyboard */; };
+		EF68C2DA1B50B38900E34985 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF68C2D91B50B38900E34985 /* Images.xcassets */; };
+		EF68C2DD1B50B38900E34985 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF68C2DB1B50B38900E34985 /* LaunchScreen.xib */; };
+		EF68C2E91B50B38A00E34985 /* GimmeRedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C2E81B50B38A00E34985 /* GimmeRedTests.m */; };
+		EF68C2F41B50D04100E34985 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EF68C2F31B50D04100E34985 /* Student.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF68C2E31B50B38A00E34985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF68C2C11B50B38900E34985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF68C2C81B50B38900E34985;
+			remoteInfo = GimmeRed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF68C2C91B50B38900E34985 /* GimmeRed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GimmeRed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF68C2CD1B50B38900E34985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF68C2CE1B50B38900E34985 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF68C2D01B50B38900E34985 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF68C2D11B50B38900E34985 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF68C2D31B50B38900E34985 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF68C2D41B50B38900E34985 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF68C2D71B50B38900E34985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF68C2D91B50B38900E34985 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF68C2DC1B50B38900E34985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF68C2E21B50B38A00E34985 /* GimmeRedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GimmeRedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF68C2E71B50B38A00E34985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF68C2E81B50B38A00E34985 /* GimmeRedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GimmeRedTests.m; sourceTree = "<group>"; };
+		EF68C2F21B50D04100E34985 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		EF68C2F31B50D04100E34985 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF68C2C61B50B38900E34985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF68C2DF1B50B38A00E34985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF68C2C01B50B38900E34985 = {
+			isa = PBXGroup;
+			children = (
+				EF68C2CB1B50B38900E34985 /* GimmeRed */,
+				EF68C2E51B50B38A00E34985 /* GimmeRedTests */,
+				EF68C2CA1B50B38900E34985 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF68C2CA1B50B38900E34985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C2C91B50B38900E34985 /* GimmeRed.app */,
+				EF68C2E21B50B38A00E34985 /* GimmeRedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF68C2CB1B50B38900E34985 /* GimmeRed */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C2D01B50B38900E34985 /* AppDelegate.h */,
+				EF68C2D11B50B38900E34985 /* AppDelegate.m */,
+				EF68C2D31B50B38900E34985 /* ViewController.h */,
+				EF68C2D41B50B38900E34985 /* ViewController.m */,
+				EF68C2D61B50B38900E34985 /* Main.storyboard */,
+				EF68C2D91B50B38900E34985 /* Images.xcassets */,
+				EF68C2DB1B50B38900E34985 /* LaunchScreen.xib */,
+				EF68C2CC1B50B38900E34985 /* Supporting Files */,
+				EF68C2F21B50D04100E34985 /* Student.h */,
+				EF68C2F31B50D04100E34985 /* Student.m */,
+			);
+			path = GimmeRed;
+			sourceTree = "<group>";
+		};
+		EF68C2CC1B50B38900E34985 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C2CD1B50B38900E34985 /* Info.plist */,
+				EF68C2CE1B50B38900E34985 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF68C2E51B50B38A00E34985 /* GimmeRedTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C2E81B50B38A00E34985 /* GimmeRedTests.m */,
+				EF68C2E61B50B38A00E34985 /* Supporting Files */,
+			);
+			path = GimmeRedTests;
+			sourceTree = "<group>";
+		};
+		EF68C2E61B50B38A00E34985 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF68C2E71B50B38A00E34985 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF68C2C81B50B38900E34985 /* GimmeRed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF68C2EC1B50B38A00E34985 /* Build configuration list for PBXNativeTarget "GimmeRed" */;
+			buildPhases = (
+				EF68C2C51B50B38900E34985 /* Sources */,
+				EF68C2C61B50B38900E34985 /* Frameworks */,
+				EF68C2C71B50B38900E34985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GimmeRed;
+			productName = GimmeRed;
+			productReference = EF68C2C91B50B38900E34985 /* GimmeRed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF68C2E11B50B38A00E34985 /* GimmeRedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF68C2EF1B50B38A00E34985 /* Build configuration list for PBXNativeTarget "GimmeRedTests" */;
+			buildPhases = (
+				EF68C2DE1B50B38A00E34985 /* Sources */,
+				EF68C2DF1B50B38A00E34985 /* Frameworks */,
+				EF68C2E01B50B38A00E34985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF68C2E41B50B38A00E34985 /* PBXTargetDependency */,
+			);
+			name = GimmeRedTests;
+			productName = GimmeRedTests;
+			productReference = EF68C2E21B50B38A00E34985 /* GimmeRedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF68C2C11B50B38900E34985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = cosmic;
+				TargetAttributes = {
+					EF68C2C81B50B38900E34985 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EF68C2E11B50B38A00E34985 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EF68C2C81B50B38900E34985;
+					};
+				};
+			};
+			buildConfigurationList = EF68C2C41B50B38900E34985 /* Build configuration list for PBXProject "GimmeRed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF68C2C01B50B38900E34985;
+			productRefGroup = EF68C2CA1B50B38900E34985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF68C2C81B50B38900E34985 /* GimmeRed */,
+				EF68C2E11B50B38A00E34985 /* GimmeRedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF68C2C71B50B38900E34985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF68C2D81B50B38900E34985 /* Main.storyboard in Resources */,
+				EF68C2DD1B50B38900E34985 /* LaunchScreen.xib in Resources */,
+				EF68C2DA1B50B38900E34985 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF68C2E01B50B38A00E34985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF68C2C51B50B38900E34985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF68C2D51B50B38900E34985 /* ViewController.m in Sources */,
+				EF68C2D21B50B38900E34985 /* AppDelegate.m in Sources */,
+				EF68C2CF1B50B38900E34985 /* main.m in Sources */,
+				EF68C2F41B50D04100E34985 /* Student.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF68C2DE1B50B38A00E34985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF68C2E91B50B38A00E34985 /* GimmeRedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF68C2E41B50B38A00E34985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF68C2C81B50B38900E34985 /* GimmeRed */;
+			targetProxy = EF68C2E31B50B38A00E34985 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF68C2D61B50B38900E34985 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF68C2D71B50B38900E34985 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF68C2DB1B50B38900E34985 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF68C2DC1B50B38900E34985 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF68C2EA1B50B38A00E34985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF68C2EB1B50B38A00E34985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF68C2ED1B50B38A00E34985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GimmeRed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF68C2EE1B50B38A00E34985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GimmeRed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF68C2F01B50B38A00E34985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GimmeRedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GimmeRed.app/GimmeRed";
+			};
+			name = Debug;
+		};
+		EF68C2F11B50B38A00E34985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GimmeRedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GimmeRed.app/GimmeRed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF68C2C41B50B38900E34985 /* Build configuration list for PBXProject "GimmeRed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF68C2EA1B50B38A00E34985 /* Debug */,
+				EF68C2EB1B50B38A00E34985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF68C2EC1B50B38A00E34985 /* Build configuration list for PBXNativeTarget "GimmeRed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF68C2ED1B50B38A00E34985 /* Debug */,
+				EF68C2EE1B50B38A00E34985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF68C2EF1B50B38A00E34985 /* Build configuration list for PBXNativeTarget "GimmeRedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF68C2F01B50B38A00E34985 /* Debug */,
+				EF68C2F11B50B38A00E34985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF68C2C11B50B38900E34985 /* Project object */;
+}
