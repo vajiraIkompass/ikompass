@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SSO-uc-HGA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7O-2h-igv">
+                                <rect key="frame" x="0.0" y="94" width="320" height="423"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="g27-kk-OgF"/>
+                                </connections>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please type your url" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xjl-Xx-kF8">
+                                <rect key="frame" x="0.0" y="64" width="268" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6vT-Ry-tJ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="webSearch"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="IV5-0g-khW"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efk-VB-MKu">
+                                <rect key="frame" x="0.0" y="525" width="320" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skC-zx-lO8">
+                                        <rect key="frame" x="0.0" y="5" width="30" height="30"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBackButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N0i-dt-UZy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1V-Ql-ZgX">
+                                        <rect key="frame" x="290" y="5" width="30" height="30"/>
+                                        <state key="normal" title="&gt;">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onForwardButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DGs-rY-hUL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz1-Ur-pba">
+                                        <rect key="frame" x="74" y="7" width="49" height="30"/>
+                                        <state key="normal" title="Reload">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onReloadButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JK9-qL-xL6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHb-S7-58k">
+                                        <rect key="frame" x="131" y="5" width="30" height="30"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchUpNewFeatures:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3fw-Eg-R8H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ZFu-sZ-HV9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O10-bZ-nM6">
+                                <rect key="frame" x="276" y="64" width="37" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="YHS-LI-fjs"/>
+                                    <constraint firstAttribute="height" constant="30" id="f4o-qu-cQI"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9bX-eV-RTy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="P7O-2h-igv" secondAttribute="trailing" constant="-16" id="19V-gn-vuK"/>
+                            <constraint firstItem="Xjl-Xx-kF8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="7Sc-s1-WOi"/>
+                            <constraint firstAttribute="centerX" secondItem="P7O-2h-igv" secondAttribute="centerX" id="7b8-hB-OaB"/>
+                            <constraint firstItem="P7O-2h-igv" firstAttribute="top" secondItem="O10-bZ-nM6" secondAttribute="bottom" id="BrF-X3-OfM"/>
+                            <constraint firstItem="P7O-2h-igv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="D3b-uh-Mmr"/>
+                            <constraint firstItem="Efk-VB-MKu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="DWx-4f-Rbc"/>
+                            <constraint firstAttribute="centerY" secondItem="P7O-2h-igv" secondAttribute="centerY" constant="-21.5" id="VSd-Cf-VAw"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Efk-VB-MKu" secondAttribute="bottom" id="ZOv-vI-ex2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Efk-VB-MKu" secondAttribute="trailing" constant="-16" id="dc9-Ub-bQv"/>
+                            <constraint firstItem="O10-bZ-nM6" firstAttribute="leading" secondItem="Xjl-Xx-kF8" secondAttribute="trailing" constant="8" id="dlV-Ut-e05"/>
+                            <constraint firstItem="Xjl-Xx-kF8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="eN0-mF-rlU"/>
+                            <constraint firstItem="O10-bZ-nM6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="mb1-9T-Rwn"/>
+                            <constraint firstItem="Efk-VB-MKu" firstAttribute="top" secondItem="P7O-2h-igv" secondAttribute="bottom" constant="8" id="wuw-QI-FpA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O10-bZ-nM6" secondAttribute="trailing" constant="-9" id="zX8-xy-J1c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I2f-ZR-xAf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="buttonBack" destination="skC-zx-lO8" id="P7S-sD-A40"/>
+                        <outlet property="buttonClear" destination="O10-bZ-nM6" id="B9d-2J-QG3"/>
+                        <outlet property="buttonForward" destination="A1V-Ql-ZgX" id="hyd-cj-QMn"/>
+                        <outlet property="urlTextField" destination="Xjl-Xx-kF8" id="zLv-Nd-1fl"/>
+                        <outlet property="webView" destination="P7O-2h-igv" id="KNH-1b-fKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S6r-v5-hAd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SSO-uc-HGA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UmB-WI-65z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="itr-Xr-UpL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQz-oX-74N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="357"/>
+        </scene>
+    </scenes>
+</document>

@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *sign;
 
+@property (weak, nonatomic) IBOutlet UISlider *sliderChange;
 
 @end
 
@@ -48,6 +49,11 @@
     
     //Update the label value, based on the slider value. For the convenience, consider only int values
     self.multiplierLabel.text = [NSString stringWithFormat:@"%d", (int)sender.value];
+    
+    
+    
+    
+    
 }
 
 //Do the math work
@@ -101,6 +107,7 @@
     else {
         self.sign.text = @"/";
     }
+
 }
 
 @end
