@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Setting default values
     self.buttonBack.enabled=NO;
     self.buttonForward.enabled=NO;
     
@@ -50,12 +51,14 @@
     //Setting page titile as the title of the navigation bar
     self.navigationItem.title =[webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     
+    //Managing webview scrolling
     webView.scrollView.delegate = self;
     self.initialWebOffset= webView.scrollView.contentOffset.y;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    //Loading the page on 'go' button press
     [self doLoadWebPage:textField.text];
     [textField resignFirstResponder];
     return YES;
@@ -82,6 +85,7 @@
 
 - (IBAction)onBackButtonPressed:(UIButton *)sender {
     
+    //Managing web navigation backward
     if ([self.webView canGoBack]) {
         [self.webView goBack];
     }
@@ -91,6 +95,7 @@
 
 - (IBAction)onForwardButtonPressed:(UIButton *)sender {
     
+    //Managing web navigation forward
     if ([self.webView canGoForward]) {
         [self.webView goForward];
     }
@@ -100,6 +105,7 @@
 
 - (IBAction)onReloadButtonPressed:(UIButton *)sender {
 
+    //Loding the url
     [self doLoadWebPage:self.urlTextField.text];
 }
 
@@ -153,6 +159,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 
+    //Managing the scroll location
     if([scrollView isEqual:self.webView.scrollView]) {
         float offset = scrollView.contentOffset.y;
         
