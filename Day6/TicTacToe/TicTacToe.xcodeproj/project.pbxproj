@@ -14,6 +14,7 @@
 		EF300A501B5B3A6F00954E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF300A4F1B5B3A6F00954E99 /* Images.xcassets */; };
 		EF300A531B5B3A6F00954E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF300A511B5B3A6F00954E99 /* LaunchScreen.xib */; };
 		EF300A5F1B5B3A7000954E99 /* TicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF300A5E1B5B3A7000954E99 /* TicTacToeTests.m */; };
+		EF6C4C061B60F3C900C4297E /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6C4C051B60F3C900C4297E /* GameBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EF300A581B5B3A7000954E99 /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF300A5D1B5B3A7000954E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF300A5E1B5B3A7000954E99 /* TicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicTacToeTests.m; sourceTree = "<group>"; };
+		EF6C4C041B60F3C900C4297E /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoard.h; sourceTree = "<group>"; };
+		EF6C4C051B60F3C900C4297E /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				EF300A4F1B5B3A6F00954E99 /* Images.xcassets */,
 				EF300A511B5B3A6F00954E99 /* LaunchScreen.xib */,
 				EF300A421B5B3A6F00954E99 /* Supporting Files */,
+				EF6C4C041B60F3C900C4297E /* GameBoard.h */,
+				EF6C4C051B60F3C900C4297E /* GameBoard.m */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6C4C061B60F3C900C4297E /* GameBoard.m in Sources */,
 				EF300A4B1B5B3A6F00954E99 /* ViewController.m in Sources */,
 				EF300A481B5B3A6F00954E99 /* AppDelegate.m in Sources */,
 				EF300A451B5B3A6F00954E99 /* main.m in Sources */,
@@ -416,6 +422,7 @@
 				EF300A641B5B3A7000954E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF300A651B5B3A7000954E99 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				EF300A671B5B3A7000954E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
