@@ -15,7 +15,7 @@
 		EF300AC31B5B8B4D00954E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF300AC21B5B8B4D00954E99 /* Images.xcassets */; };
 		EF300AC61B5B8B4D00954E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF300AC41B5B8B4D00954E99 /* LaunchScreen.xib */; };
 		EF300AD21B5B8B4D00954E99 /* ShoppingListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF300AD11B5B8B4D00954E99 /* ShoppingListTests.m */; };
-		EF300ADD1B5B8D1100954E99 /* ShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF300ADC1B5B8D1100954E99 /* ShopItem.m */; };
+		EF6C4C031B60BA7300C4297E /* ShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6C4C021B60BA7300C4297E /* ShopItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,8 @@
 		EF300ACB1B5B8B4D00954E99 /* ShoppingListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF300AD01B5B8B4D00954E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF300AD11B5B8B4D00954E99 /* ShoppingListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingListTests.m; sourceTree = "<group>"; };
-		EF300ADB1B5B8D1100954E99 /* ShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItem.h; sourceTree = "<group>"; };
-		EF300ADC1B5B8D1100954E99 /* ShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItem.m; sourceTree = "<group>"; };
+		EF6C4C011B60BA7300C4297E /* ShopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopItem.h; path = ../ShopItem.h; sourceTree = "<group>"; };
+		EF6C4C021B60BA7300C4297E /* ShopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopItem.m; path = ../ShopItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 				EF300AC21B5B8B4D00954E99 /* Images.xcassets */,
 				EF300AC41B5B8B4D00954E99 /* LaunchScreen.xib */,
 				EF300AB91B5B8B4D00954E99 /* ShoppingList.xcdatamodeld */,
-				EF300ADB1B5B8D1100954E99 /* ShopItem.h */,
-				EF300ADC1B5B8D1100954E99 /* ShopItem.m */,
+				EF6C4C011B60BA7300C4297E /* ShopItem.h */,
+				EF6C4C021B60BA7300C4297E /* ShopItem.m */,
 				EF300AB21B5B8B4D00954E99 /* Supporting Files */,
 			);
 			path = ShoppingList;
@@ -230,7 +230,7 @@
 				EF300ABB1B5B8B4D00954E99 /* ShoppingList.xcdatamodeld in Sources */,
 				EF300AB81B5B8B4D00954E99 /* AppDelegate.m in Sources */,
 				EF300ABE1B5B8B4D00954E99 /* ViewController.m in Sources */,
-				EF300ADD1B5B8D1100954E99 /* ShopItem.m in Sources */,
+				EF6C4C031B60BA7300C4297E /* ShopItem.m in Sources */,
 				EF300AB51B5B8B4D00954E99 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +426,7 @@
 				EF300AD71B5B8B4D00954E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF300AD81B5B8B4D00954E99 /* Build configuration list for PBXNativeTarget "ShoppingListTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +435,7 @@
 				EF300ADA1B5B8B4D00954E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
